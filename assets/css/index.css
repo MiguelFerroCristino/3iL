@@ -49,7 +49,12 @@ body {
     background-color: #CCF8C4;
     height: 100vh;
     width: 100vw;
-    margin-top: 8rem;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 
 }
 .redirection {
@@ -62,14 +67,30 @@ body {
     height: 1.8rem;
     text-decoration: none;
     text-align: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 
-  .carte{
-    width: 20rem;
-    width: 33rem;
+  .carte {
+    display: flex;
+    width:20rem;
+    height: 33rem;
     background-color: white;
     border-radius: 1rem;
-    border-color: #17254B;
+    border: 4px solid #17254B;
   }
+
+  .second-screen{
+    background-color: #37BD3D;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+
 
