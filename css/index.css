@@ -13,7 +13,7 @@ body {
     position: fixed;
     top: 0;
     background-color: #008040    ;
-    height: 6rem;
+    height: 7rem;
     width: 100vw;
     display: flex;
     justify-content: space-around;
@@ -51,7 +51,7 @@ body {
     background-color: #CCF8C4;
     height: 100vh;
     width: 100vw;
-    margin-top: 7rem;
+    margin-top: 8rem;
 
 }
 .redirection {
