@@ -39,12 +39,33 @@ function openMenu() {
 }
 
 function setTheme(theme) {
-    // Supprimer toutes les classes de thème du body
+    const body = document.body;
+    const dyslexiaClass = 'dyslexia';
+  
     document.body.classList.remove('dark-mode', 'protonopia', 'deuteranopia', 'tritanopia');
   
-    // Ajouter la classe du thème sélectionné au body
-    document.body.classList.add(theme);
-}
+    if (theme === 'dyslexia') {
+      body.classList.toggle(dyslexiaClass);
+  
+      if (body.classList.contains(dyslexiaClass)) {
+        document.documentElement.style.setProperty('--fnt-font-title', 'Dyslexie, sans-serif');
+        document.documentElement.style.setProperty('--fnt-font-contenu', 'Dyslexie, sans-serif');
+      } else {
+        document.documentElement.style.setProperty('--fnt-font-title', 'Archivo Black, sans-serif');
+        document.documentElement.style.setProperty('--fnt-font-contenu', 'Archivo Black, sans-serif');
+      }
+    } else {
+  
+      body.classList.remove(dyslexiaClass);
+      document.documentElement.style.setProperty('--fnt-font-title', 'Archivo Black, sans-serif');
+      document.documentElement.style.setProperty('--fnt-font-contenu', 'Archivo Black, sans-serif');
+  
+          document.body.classList.remove('dark-mode', 'protonopia', 'deuteranopia', 'tritanopia');
+  
+          document.body.classList.add(theme);
+    }
+  }
+
 const trees = document.getElementsByClassName('trees');
 const water = document.getElementsByClassName('water');
 const recycled = document.getElementsByClassName('recycled');
@@ -73,7 +94,7 @@ anime({
 anime({
     targets: recycled, // Target the array of elements with the class 'text'
     innerHTML: [0, 41.4], // Animate from 0 to 10
-    round: 0.1, // Round the numbers to 1 decimal place
+    round: .1, // Round the numbers to 1 decimal place
     easing: 'linear', // Use linear easing
     duration: 1000, // Animation duration in milliseconds
     delay: anime.stagger(300), // Add a stagger delay to each element

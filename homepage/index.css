@@ -1,12 +1,14 @@
+
 @import url("../global.css");
+
 body {
   margin: 0;
   background-color: var(--clr-bgcolor);
   overflow-x: hidden;
+  font-family: var(--fnt-font-contenu);
+  font-family: var(--fnt-font-title);
 }
 .navbar {
-  font-family: var(--fnt-font);
-
   position: fixed;
   top: 0;
   background-color: var(--clr-primary);
@@ -114,17 +116,17 @@ body {
   font-size: 3.5rem;
 }
 .text-2 {
-  color: var(--clr-bgcolor);
+  color: var(--clr-fontcolor);
   font-size: 2rem;
   margin-top: -0.5rem;
   font-family: "Arial", sans-serif;
 }
 .text-title {
-  color: var(--clr-bgcolor);
+  color: var(--clr-custom);
   font-size: 2.5rem;
 }
-/* .svg-stat {
-} */
+.svg-stat {
+}
 
 .third-screen {
   background-color: var(--clr-bgcolor);
@@ -183,7 +185,6 @@ swiper-slide:nth-child(4n) {
   text-decoration: none;
   font-size: medium;
 }
-
 .card {
   display: flex;
   flex-direction: column;
@@ -264,6 +265,7 @@ z-index: -10;
   margin-left: -5rem;
   
 }
+
 .Settings-mobile{
   display: flex;
 }
