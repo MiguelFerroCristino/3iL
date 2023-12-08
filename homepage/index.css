@@ -299,5 +299,37 @@ z-index: -10;
 }
 
 
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-primary);
+  height: 6rem;
+  width: 100vw;
+  margin-top: 7rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  color: var(--clr-fontcolor);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.footer-contenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin-top: 1rem;
+}
+
+.footer-contenu a{
+  color: var(--clr-bgcolor);
+}
+
 
 
