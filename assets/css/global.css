@@ -1,0 +1,34 @@
+:root {
+    --clr-primary: #008040 ; 
+    --clr-bgcolor: #CCF8C4; 
+    --clr-secondary: #37BD3D; 
+    --clr-fontcolor: #17254b; 
+  }
+  .protonopia{
+    --clr-primary: #7A6E3D; /* Equivalent au clr-light-primary pour la protanopie */
+    --clr-bgcolor: #FBEBBD; /* Equivalent au clr-light-secondary pour la protanopie */
+    --clr-secondary: #FBEBBD; /* Equivalent au clr-light-fontcolor pour la protanopie */
+    --clr-fontcolor: #1A2A4D; /* Equivalent au clr-light-button pour la protanopie */
+  }
+  
+  .deuteranopia{
+    --clr-primary: #856949; /* Equivalent au clr-light-primary pour la deutéranopie */
+    --clr-bgcolor: #FFE7DB; /* Equivalent au clr-light-secondary pour la deutéranopie */
+    --clr-secondary: #FFE7DB; /* Equivalent au clr-light-fontcolor pour la deutéranopie */
+    --clr-fontcolor: #0E2C4B; /* Equivalent au clr-light-button pour la deutéranopie */
+  }
+  
+  .tritanopia{
+    --clr-primary: #0E2C4B; /* Equivalent au clr-light-navbar pour la tritanopie */
+    --clr-bgcolor: #DAEEFF; /* Equivalent au clr-light-primary pour la tritanopie */
+    --clr-secondary: #62AFBD; /* Equivalent au clr-light-secondary pour la tritanopie */
+    --clr-fontcolor: #62AFBD; /* Equivalent au clr-light-fontcolor pour la tritanopie */
+  }
+  
+  
+  .dark-mode{
+    --clr-primary: #17254b;
+    --clr-bgcolor: #1f1f1f;
+    --clr-secondary: #333333;
+    --clr-fontcolor: #FFFFFF;
+  }
