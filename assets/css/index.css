@@ -6,7 +6,7 @@
   --clr-secondary: #37BD3D; 
   --clr-fontcolor: #17254b; 
 }
-.protanopia{
+.protonopia{
   --clr-primary: #7A6E3D; /* Equivalent au clr-light-primary pour la protanopie */
   --clr-bgcolor: #FBEBBD; /* Equivalent au clr-light-secondary pour la protanopie */
   --clr-secondary: #FBEBBD; /* Equivalent au clr-light-fontcolor pour la protanopie */
@@ -39,13 +39,13 @@
 body {
   font-family: "Archivo Black", sans-serif;
   margin: 0;
-  background-color: #ccf8c4;
+  background-color: var(--clr-bgcolor);
   overflow-x: hidden;
 }
 .navbar {
   position: fixed;
   top: 0;
-  background-color: #008040;
+  background-color: var(--clr-primary);
   height: 7rem;
   width: 100vw;
   display: flex;
@@ -59,28 +59,28 @@ body {
 }
 
 .logo-text {
-  fill: #17254b;
-  color: #17254b;
+  fill: var(--clr-fontcolor);
+  color: var(--clr-fontcolor);
 }
 .accesibility {
   width: 6rem;
   height: 2rem;
-  background-color: #ccf8c4;
+  background-color: var(--clr-bgcolor);
   border-radius: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  color: #17254b;
+  color: var(--clr-fontcolor);
 }
 
 .color-icon {
-  fill: #17254b;
-  color: #17254b;
+  fill: var(--clr-fontcolor);
+  color: var(--clr-fontcolor);
 }
 
 .first-screen {
-  background-color: #ccf8c4;
+  background-color: var(--clr-bgcolor);
   height: 100vh;
   width: 100vw;
   margin-top: 7rem;
@@ -96,7 +96,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  color: #17254b;
+  color: var(--clr-fontcolor);
   height: 1.8rem;
   text-decoration: none;
   text-align: center;
@@ -110,11 +110,11 @@ body {
   height: 33rem;
   background-color: white;
   border-radius: 1rem;
-  border: 4px solid #17254b;
+  border: 4px solid var(--clr-fontcolor);
 }
 
 .second-screen {
-  background-color: #37bd3d;
+  background-color: var(--clr-secondary);
   height: 47rem;
   width: 100vw;
   margin-top: 7rem;
@@ -128,7 +128,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #17254b;
+  color: var(--clr-fontcolor);
   font-style: bold;
   text-align: center;
 }
@@ -136,7 +136,7 @@ body {
 .stat {
   display: flex;
   flex-direction: row;
-  color: #17254b;
+  color: var(--clr-fontcolor);
   font-style: bold;
   gap: 1rem;
   height: 5rem;
@@ -144,24 +144,24 @@ body {
   align-items: center;
 }
 .text {
-  color: #17254b;
+  color: var(--clr-fontcolor);
   font-size: 3.5rem;
 }
 .text-2 {
-  color: #ccf8c4;
+  color: var(--clr-bgcolor);
   font-size: 2rem;
   margin-top: -0.5rem;
   font-family: "Arial", sans-serif;
 }
 .text-title {
-  color: #ccf8c4;
+  color: var(--clr-bgcolor);
   font-size: 2.5rem;
 }
 .svg-stat {
 }
 
 .third-screen {
-  background-color: #ccf8c4;
+  background-color: var(--clr-bgcolor);
   height: 47rem;
   width: 100vw;
   margin-top: 7rem;
@@ -212,7 +212,7 @@ swiper-slide:nth-child(4n) {
   height: 3rem;
   width: 10rem;
   border-radius: 1rem;
-  background-color: #17254b;
+  background-color: var(--clr-fontcolor);
   color: #fff;
   text-decoration: none;
   font-size: medium;
@@ -230,7 +230,7 @@ swiper-slide:nth-child(4n) {
 }
 .text-assoc {
 
-  color: #17254b;
+  color: var(--clr-fontcolor);
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
