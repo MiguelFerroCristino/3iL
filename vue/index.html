@@ -21,12 +21,25 @@
                 <img src="../assets/img/logotittle.svg" alt="">
             </div>
             <div>
-                <div onclick="openMenu()" class="accesibility">
-                    <i class="color-icon fa-solid fa-sun"></i>
-                    <p>Light</p>
+                <div  onclick="openMenu()">
+                    <div  onclick="setTheme('light')"class="accesibility">
+                        <i class="color-icon fa-solid fa-sun"></i>
+                        <p>Light</p>
+                    </div>
                 </div>
                 <div id='menu' class="dropdown-acces">
-                    
+                    <div onclick="setTheme('dark-mode')" class="accesibility-2">
+                        <i class="fa-solid fa-moon"></i>  <p>Dark</p>
+                    </div>
+                    <div onclick="setTheme('protonopia')" class="accesibility-2">
+                         <p>Protonopia</p>
+                    </div>
+                    <div onclick="setTheme('deuteranopia')" class="accesibility-2">
+                         <p>Deuteranopia</p>
+                    </div>
+                    <div onclick="setTheme('tritanopia')" class="accesibility-2">
+                          <p>Tritanopia</p>
+                    </div>
 
                 </div>
             </div>

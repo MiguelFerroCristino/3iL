@@ -202,7 +202,7 @@ swiper-slide:nth-child(4n) {
 
 .dropdown-acces{
   position: fixed;
-  height: 10rem;
+  height: 13rem;
   width: 6rem;
   transform: translateY(5px);
   background-color: var(--clr-bgcolor);
@@ -210,20 +210,19 @@ swiper-slide:nth-child(4n) {
   display: none;
   
 }
-@keyframes dropdownAnimation {
-  from {
-      height: 0;
-  }
-  to {
-      height: 10rem; 
-  }
+
+.accesibility-2{
+  margin-top: 1rem;
+  width: 6rem;
+  height: 2rem;
+  background-color: var(--clr-bgcolor);
+  border-radius: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--clr-fontcolor);
+
 }
 
-@keyframes reversedropdownAnimation {
-  from {
-      height: 10rem;
-  }
-  to {
-      height: 0 ; 
-  }
-}
+
