@@ -5,10 +5,10 @@ body {
   margin: 0;
   background-color: var(--clr-bgcolor);
   overflow-x: hidden;
+  font-family: var(--fnt-font-contenu);
+  font-family: var(--fnt-font-title);
 }
 .navbar {
-  font-family: var(--fnt-font);
-
   position: fixed;
   top: 0;
   background-color: var(--clr-primary);
