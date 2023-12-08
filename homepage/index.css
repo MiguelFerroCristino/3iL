@@ -27,9 +27,11 @@ body {
   color: var(--clr-fontcolor);
 }
 .accesibility {
-  width: 6rem;
+  cursor: pointer;
+
+  width: 10rem;
   height: 2rem;
-  background-color: var(--clr-bgcolor);
+  background-color: var(--clr-secondary);
   border-radius: 4rem;
   display: flex;
   justify-content: center;
@@ -176,11 +178,12 @@ swiper-slide:nth-child(4n) {
   height: 3rem;
   width: 10rem;
   border-radius: 1rem;
-  background-color: var(--clr-fontcolor);
+  background-color:#17254b;
   color: #fff;
   text-decoration: none;
   font-size: medium;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -194,40 +197,110 @@ swiper-slide:nth-child(4n) {
 }
 .text-assoc {
 
-  color: var(--clr-fontcolor);
+  color:#17254b ;
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
 }
 
 .dropdown-acces{
-  margin-left: -0.5rem;
+  top: 0;
+  left: 0;
   position: fixed;
-  height: 13rem;
-  width: 7.2rem;
-  transform: translateY(5px);
-  background-color: var(--clr-bgcolor);
-  border-radius: 1.8rem ;
+  height: 20rem;
+  width: 100vw;
+  background-color: var(--clr-secondary);
   display: none;
   text-align: center;
   
-  border: 4px solid var(--clr-fontcolor);
+  
+}
+.dropdown-acces2{
+  margin-top: -0.8rem;
+z-index: -10;
+  position: fixed;
+  height: 20rem;
+  width: 10rem;
+  background-color: var(--clr-secondary);
+  display: none;
+  text-align: center;
+  border: 0.2rem  var(--clr-fontcolor);
+  box-shadow: inset;
+
   
 }
 
 .accesibility-2{
+  cursor: pointer;
   margin-top: 1rem;
   width: auto;
   height: 2rem;
-  background-color: var(--clr-bgcolor);
+  background-color: var(--clr-secondary );
   border-radius: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--clr-fontcolor);
 
 }
+
+.crossclose{
+  color:var(--clr-fontcolor); 
+  
+}
+
+.redirection-2{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-fontcolor);
+  height: 1.8rem;
+  text-decoration: none;
+  text-align: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin-left: -5rem;
+  
+}
+.Settings-mobile{
+  display: flex;
+}
+
+.Settings{
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .redirection{
+    display: none ;
+  }
+  .redirection-2{
+    display: flex ;
+  }
+  .Settings{
+    display: flex;
+  }
+
+  .Settings-mobile{
+    display: none;
+  }
+
+
+}
+
+
+.dropdown-acces-2{
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 20rem;
+  width: 100vw;
+  display: none;
+  text-align: center;
+  
+  
+}
+
 
 
