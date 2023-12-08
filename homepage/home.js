@@ -44,33 +44,13 @@ function setTheme(theme) {
   
     document.body.classList.remove('dark-mode', 'protonopia', 'deuteranopia', 'tritanopia');
   
-    if (theme === 'dyslexia') {
-      body.classList.toggle(dyslexiaClass);
-  
-      if (body.classList.contains(dyslexiaClass)) {
-        document.documentElement.style.setProperty('--fnt-font-title', 'Dyslexie, sans-serif');
-        document.documentElement.style.setProperty('--fnt-font-contenu', 'Dyslexie, sans-serif');
-      } else {
-        document.documentElement.style.setProperty('--fnt-font-title', 'Archivo Black, sans-serif');
-        document.documentElement.style.setProperty('--fnt-font-contenu', 'Archivo Black, sans-serif');
-      }
-    } else {
-  
-      body.classList.remove(dyslexiaClass);
-      document.documentElement.style.setProperty('--fnt-font-title', 'Archivo Black, sans-serif');
-      document.documentElement.style.setProperty('--fnt-font-contenu', 'Archivo Black, sans-serif');
-  
-          document.body.classList.remove('dark-mode', 'protonopia', 'deuteranopia', 'tritanopia');
-  
-          document.body.classList.add(theme);
-    }
-  }
+    // Ajouter la classe du thème sélectionné au body
+    document.body.classList.add(theme);
+}
+const numbers = document.getElementsByClassName('animatedNumbers');
 
-const trees = document.getElementsByClassName('trees');
-const water = document.getElementsByClassName('water');
-const recycled = document.getElementsByClassName('recycled');
-const collected = document.getElementsByClassName('collected');
-
+// Convert HTMLCollection to an array
+const numbersArray = Array.from(numbers);
 
 // Animate the numbers using Anime.js
 anime({
@@ -108,3 +88,32 @@ anime({
     duration: 1000, // Animation duration in milliseconds
     delay: anime.stagger(300), // Add a stagger delay to each element
 });
+
+
+if (theme == 'dark-mode' && window.innerWidth <= 992) {
+    document.getElementById('carte').src = '../3iL/public/img/cartemobilenuit.png';
+    document.getElementById('mobilenuit').style.display = 'block'; // Pour afficher l'élément
+    document.getElementById('mobilejour').style.display = 'none'; // Pour masquer l'élément
+
+} else {
+    document.getElementById('carte').src = '../3iL/public/img/cartemobile.png';
+    document.getElementById('mobilenuit').style.display = 'none'; // Pour masquer l'élément
+    document.getElementById('mobilejour').style.display = 'block'; // Pour afficher l'élément
+
+}
+if (theme == 'dark-mode' && window.innerWidth >= 992) {
+    document.getElementById('pcnuit').style.display = 'block'; // Pour afficher l'élément
+    document.getElementById('pcjour').style.display = 'none'; // Pour masquer l'élément
+    document.getElementById('carte2').src = '../3iL/public/img/cartepcnuit.jpg';
+} else {
+    document.getElementById('pcnuit').style.display = 'none'; // Pour masquer l'élément
+    document.getElementById('pcjour').style.display = 'block'; // Pour afficher l'élément
+    document.getElementById('carte2').src = '../3iL/public/img/cartepc.jpg';
+}
+
+
+
+
+function redirectTo(url) {
+window.open(url, '_blank');
+}
