@@ -82,7 +82,7 @@ body {
 
 .second-screen {
   background-color: var(--clr-secondary);
-  height: 47rem;
+  height: 48rem;
   width: 100vw;
   margin-top: 7rem;
   display: flex;
@@ -124,14 +124,12 @@ body {
   color: var(--clr-custom);
   font-size: 2.5rem;
 }
-.svg-stat {
-}
 
 .third-screen {
   background-color: var(--clr-bgcolor);
   height: 47rem;
   width: 96vw;
-  margin-top: 7rem;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,7 +288,6 @@ z-index: -10;
 
 }
 
-
 .dropdown-acces-2{
   top: 0;
   left: 0;
@@ -299,9 +296,8 @@ z-index: -10;
   width: 100vw;
   display: none;
   text-align: center;
-  
-  
 }
+
 
 
 
