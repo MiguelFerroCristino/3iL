@@ -44,9 +44,27 @@ function setTheme(theme) {
   
     document.body.classList.remove('dark-mode', 'protonopia', 'deuteranopia', 'tritanopia');
   
-    // Ajouter la classe du thème sélectionné au body
-    document.body.classList.add(theme);
-}
+    if (theme === 'dyslexia') {
+      body.classList.toggle(dyslexiaClass);
+  
+      if (body.classList.contains(dyslexiaClass)) {
+        document.documentElement.style.setProperty('--fnt-font-title', 'Dyslexie, sans-serif');
+        document.documentElement.style.setProperty('--fnt-font-contenu', 'Dyslexie, sans-serif');
+      } else {
+        document.documentElement.style.setProperty('--fnt-font-title', 'Archivo Black, sans-serif');
+        document.documentElement.style.setProperty('--fnt-font-contenu', 'Archivo Black, sans-serif');
+      }
+    } else {
+  
+      body.classList.remove(dyslexiaClass);
+      document.documentElement.style.setProperty('--fnt-font-title', 'Archivo Black, sans-serif');
+      document.documentElement.style.setProperty('--fnt-font-contenu', 'Archivo Black, sans-serif');
+  
+          document.body.classList.remove('dark-mode', 'protonopia', 'deuteranopia', 'tritanopia');
+  
+          document.body.classList.add(theme);
+    }
+  }
 const trees = document.getElementsByClassName('trees');
 const water = document.getElementsByClassName('water');
 const recycled = document.getElementsByClassName('recycled');
