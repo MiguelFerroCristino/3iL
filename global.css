@@ -14,6 +14,9 @@
   --fnt-font-contenu: "Archivo Black", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
 .default {
   --fnt-font-title: "Archivo Black", sans-serif;
   --fnt-font-contenu: "Archivo Black", sans-serif;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,104 +11,104 @@
 </head>
 
 <body>
-        <nav class="navbar ">
+    <nav class="navbar ">
 
-            <div class="title">
-                <img class='logo' src="./public/img/logo.svg" alt="">
-                <img src="./public/img/logotittle.svg" alt="">
-            </div>
-            <div class="redirection-2">
-                <p >Game</p>
-                <p >Stats</p>
-                <p >Chatbot</p>
-            </div>
-            <div>
-                <div class="Settings" onclick="openMenu2()">
-                    <div  class="accesibility">
-                        <i class="fa-solid fa-gear"></i>
-                        <p>Settings</p>
-                    </div>
+        <div class="title">
+            <img class='logo' src="./public/img/logo.svg" alt="">
+            <img src="./public/img/logotittle.svg" alt="">
+        </div>
+        <div class="redirection-2">
+            <a href="#game"><p>Game</p></a>
+            <a href="#stats"><p>Stats</p></a>
+            <a href="#donate"><p>Donate</p></a>
+        </div>
+        <div>
+            <div class="Settings" onclick="openMenu2()">
+                <div class="accesibility">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Settings</p>
                 </div>
-                <div class="Settings-mobile" onclick="openMenu()">
-                    <div  class="accesibility">
-                        <i class="fa-solid fa-gear"></i>    
-                          <p>Settings</p>
-                    </div>
+            </div>
+            <div class="Settings-mobile" onclick="openMenu()">
+                <div class="accesibility">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Settings</p>
                 </div>
+            </div>
 
-                <div id='menu' class="dropdown-acces">
+            <div id='menu' class="dropdown-acces">
 
-                    <div onclick="setTheme('light')"
-                        class="accesibility-2">
-                        <i class="color-icon fa-solid fa-sun"></i>
-                        <p>Light</p>
-                   </div>
-                    <div onclick="setTheme('dark-mode')" class="accesibility-2">
-                        <i class="fa-solid fa-moon"></i>  <p>Dark</p>
-                    </div>
-                    <div onclick="setTheme('protonopia')" class="accesibility-2">
-                         <p>Protonopia</p>
-                    </div>
-                    <div onclick="setTheme('deuteranopia')" class="accesibility-2">
-                         <p>Deuteranopia</p>
-                    </div>
-                    <div onclick="setTheme('tritanopia')" class="accesibility-2">
-                          <p>Tritanopia</p>
-                    </div>
-                    <div onclick="setTheme('dyslexia')" class="accesibility-2">
-                        <p>Dyslexie</p>
-                  </div>
-                  <div onclick="openMenu()" class="crossclose accesibility-2">
+                <div onclick="setTheme('light')" class="accesibility-2">
+                    <i class="color-icon fa-solid fa-sun"></i>
+                    <p>Light</p>
+                </div>
+                <div onclick="setTheme('dark-mode')" class="accesibility-2">
+                    <i class="fa-solid fa-moon"></i>
+                    <p>Dark</p>
+                </div>
+                <div onclick="setTheme('protonopia')" class="accesibility-2">
+                    <p>Protonopia</p>
+                </div>
+                <div onclick="setTheme('deuteranopia')" class="accesibility-2">
+                    <p>Deuteranopia</p>
+                </div>
+                <div onclick="setTheme('tritanopia')" class="accesibility-2">
+                    <p>Tritanopia</p>
+                </div>
+                <div onclick="setTheme('dyslexia')" class="accesibility-2">
+                    <p>Dyslexie</p>
+                </div>
+                <div onclick="openMenu()" class="crossclose accesibility-2">
                     <i class="fa-solid fa-xmark"></i>
                 </div>
 
-                </div>
-                <div id='menu' class="dropdown-acces2">
-
-                    <div onclick="setTheme('light')"
-                        class="accesibility-2">
-                        <i class="color-icon fa-solid fa-sun"></i>
-                        <p>Light</p>
-                   </div>
-                    <div onclick="setTheme('dark-mode')" class="accesibility-2">
-                        <i class="fa-solid fa-moon"></i>  <p>Dark</p>
-                    </div>
-                    <div onclick="setTheme('protonopia')" class="accesibility-2">
-                         <p>Protonopia</p>
-                    </div>
-                    <div onclick="setTheme('deuteranopia')" class="accesibility-2">
-                         <p>Deuteranopia</p>
-                    </div>
-                    <div onclick="setTheme('tritanopia')" class="accesibility-2">
-                          <p>Tritanopia</p>
-                    </div>
-                    <div onclick="setTheme('dyslexia')" class="accesibility-2">
-                        <p>Dyslexie</p>
-                  </div>
-
-                    <div onclick="openMenu2()" class="crossclose accesibility-2">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-
-                </div>
             </div>
-            
-            
-            
-        </nav>
-        <div class="first-screen">
-            <div class="redirection">
-                <p >Game</p>
-                <p >Stats</p>
-                <p >Chatbot</p>
-            </div>
-            
-                <div class="carte">
+            <div id='menu' class="dropdown-acces2">
+
+                <div onclick="setTheme('light')" class="accesibility-2">
+                    <i class="color-icon fa-solid fa-sun"></i>
+                    <p>Light</p>
                 </div>
+                <div onclick="setTheme('dark-mode')" class="accesibility-2">
+                    <i class="fa-solid fa-moon"></i>
+                    <p>Dark</p>
+                </div>
+                <div onclick="setTheme('protonopia')" class="accesibility-2">
+                    <p>Protonopia</p>
+                </div>
+                <div onclick="setTheme('deuteranopia')" class="accesibility-2">
+                    <p>Deuteranopia</p>
+                </div>
+                <div onclick="setTheme('tritanopia')" class="accesibility-2">
+                    <p>Tritanopia</p>
+                </div>
+                <div onclick="setTheme('dyslexia')" class="accesibility-2">
+                    <p>Dyslexie</p>
+                </div>
+
+                <div onclick="openMenu2()" class="crossclose accesibility-2">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
         </div>
-        <div class="second-screen">
+
+
+
+    </nav>
+    <div class="first-screen">
+        <div class="redirection">
+            <a href="#game"><p>Game</p></a>
+            <a href="#stats"><p>Stats</p></a>
+            <a href="#donate"><p>Donate</p></a>
+        </div>
+
+        <div class="carte">
+        </div>
+    </div>
+    <div class="second-screen" id="stats">
         <h1 class="text-title">Key Numbers of 2023</h1>
-        
+
         <div class="stat-parent">
             <div class="stat">
                 <p class="text trees">0</p>
@@ -138,49 +139,66 @@
             <p class="text-2">billions collected for our planet</p>
         </div>
     </div>
-        <div class="third-screen">
-            <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
-                <swiper-slide>
-                    <div class='card'>
-                        <img class="logo-assoc" src="./public/img/fondation.png" alt="">
-                        <p class="text-assoc">Fondation pour la nature et l'homme</p>
-                        <a class="cardbtn"  href="https://dons.fnh.org/F1223MEDIAutm_source=google&utm_medium=cpc&utm_campaign=cfa23?gclid=CjwKCAiA98WrBhAYEiwA2WvhOsEEgdddyQzGXBScCsr8UhdXxl8ReF5jx4uCK3BeKKzisFfNaLasvhoCxF0QAvD_BwE" target="_blank">Faire un don </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class='card'>
-                        <img class="logo-assoc" src="./public/img/francenature.png" alt="">
-                        <p class="text-assoc">France nature</p>
-                        <a class="cardbtn"  href="https://soutenir.fne.asso.fr/dons/~mon-don" target="_blank">Faire un don </a>
-                    </div>
-                </swiper-slide>             
-                <swiper-slide>
-                    <div class='card'>
-                        <img class="logo-assoc" src="./public/img/amisdelaterre.png" alt="">
-                        <p class="text-assoc">Les amis de la terre</p>
-                        <a class="cardbtn"  href="https://don.amisdelaterre.org/don/~mon-don?_cv=1" target="_blank">Faire un don </a>
-                    </div>
-                </swiper-slide>        
-                <swiper-slide>
-                    <div class='card'>
-                        <img class="logo-assoc" src="./public/img/bretangevivante.jpg" alt="">
-                        <p class="text-assoc">Bretagne Vivante</p>
-                        <a class="cardbtn"  href="https://www.bretagne-vivante.org/faire-un-don/" target="_blank">Faire un don </a>
-                    </div>
-                </swiper-slide>                
-              </swiper-container>
-              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <div class="third-screen" id="donate">
+        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+            <swiper-slide>
+                <div class='card'>
+                    <img class="logo-assoc" src="./public/img/fondation.png" alt="">
+                    <p class="text-assoc">Fondation pour la nature et l'homme</p>
+                    <a class="cardbtn"
+                        href="https://dons.fnh.org/F1223MEDIAutm_source=google&utm_medium=cpc&utm_campaign=cfa23?gclid=CjwKCAiA98WrBhAYEiwA2WvhOsEEgdddyQzGXBScCsr8UhdXxl8ReF5jx4uCK3BeKKzisFfNaLasvhoCxF0QAvD_BwE"
+                        target="_blank">Faire un don </a>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class='card'>
+                    <img class="logo-assoc" src="./public/img/francenature.png" alt="">
+                    <p class="text-assoc">France nature</p>
+                    <a class="cardbtn" href="https://soutenir.fne.asso.fr/dons/~mon-don" target="_blank">Faire un don
+                    </a>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class='card'>
+                    <img class="logo-assoc" src="./public/img/amisdelaterre.png" alt="">
+                    <p class="text-assoc">Les amis de la terre</p>
+                    <a class="cardbtn" href="https://don.amisdelaterre.org/don/~mon-don?_cv=1" target="_blank">Faire un
+                        don </a>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class='card'>
+                    <img class="logo-assoc" src="./public/img/bretangevivante.jpg" alt="">
+                    <p class="text-assoc">Bretagne Vivante</p>
+                    <a class="cardbtn" href="https://www.bretagne-vivante.org/faire-un-don/" target="_blank">Faire un
+                        don </a>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-        </div>
-        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-        <script src="https://mediafiles.botpress.cloud/a634fa7f-c0eb-406e-b6be-56e9a66297e8/webchat/config.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-        <script id="datagir_dechets" src="https://quefairedemesdechets.fr/iframe.js" data-search="?theme=default"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-        <script src="./homepage/home.js"></script>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h1 class="logo-text"><span>Eco</span>Quest</h1>
+                    <p>
+                        EcoQuest est un jeu qui a pour but de sensibiliser les jeunes à l'écologie et à l'environnement.
+                    </p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> &nbsp; 06 06 06 06 06</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp;
+    </footer>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/a634fa7f-c0eb-406e-b6be-56e9a66297e8/webchat/config.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script id="datagir_dechets" src="https://quefairedemesdechets.fr/iframe.js" data-search="?theme=default"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="./homepage/home.js"></script>
 
 
-        <!-- <button onclick="setTheme('default')">Light Mode</button>
+    <!-- <button onclick="setTheme('default')">Light Mode</button>
 <button onclick="setTheme('dark-mode')">Dark Mode</button>
 <button onclick="setTheme('protonopia')">Protonopia Mode</button>
 <button onclick="setTheme('deuteranopia')">Deuteranopia Mode</button>
@@ -189,4 +207,5 @@
 
 
 </body>
+
 </html>
