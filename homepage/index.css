@@ -1,14 +1,13 @@
 
-@import url("global.css");
-
+@import url("../global.css");
 body {
   margin: 0;
   background-color: var(--clr-bgcolor);
   overflow-x: hidden;
-  font-family: var(--fnt-font-contenu);
-  font-family: var(--fnt-font-title);
 }
 .navbar {
+  font-family: var(--fnt-font);
+
   position: fixed;
   top: 0;
   background-color: var(--clr-primary);
@@ -29,7 +28,7 @@ body {
   color: var(--clr-fontcolor);
 }
 .accesibility {
-  width: 7rem;
+  width: 6rem;
   height: 2rem;
   background-color: var(--clr-bgcolor);
   border-radius: 4rem;
@@ -123,8 +122,8 @@ body {
   color: var(--clr-bgcolor);
   font-size: 2.5rem;
 }
-.svg-stat {
-}
+/* .svg-stat {
+} */
 
 .third-screen {
   background-color: var(--clr-bgcolor);
@@ -203,15 +202,17 @@ swiper-slide:nth-child(4n) {
 }
 
 .dropdown-acces{
-  top: 0;
-  left: 0;
+  margin-left: -0.5rem;
   position: fixed;
-  height: 15rem;
-  width: 100vw;
-  background-color: var(--clr-primary);
+  height: 13rem;
+  width: 7.2rem;
+  transform: translateY(5px);
+  background-color: var(--clr-bgcolor);
+  border-radius: 1.8rem ;
   display: none;
   text-align: center;
   
+  border: 4px solid var(--clr-fontcolor);
   
 }
 
@@ -219,7 +220,7 @@ swiper-slide:nth-child(4n) {
   margin-top: 1rem;
   width: auto;
   height: 2rem;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-bgcolor);
   border-radius: 4rem;
   display: flex;
   justify-content: center;

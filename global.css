@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @font-face {
     font-family: "Dyslexie";
-    src: url("../fonts/OpenDyslexic-Regular.otf") format("opentype");
+    src: url("./fonts/OpenDyslexic-Regular.otf") format("opentype");
   }
 
 :root {
