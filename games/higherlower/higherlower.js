@@ -1,41 +1,41 @@
 // Vos données sur les aliments avec leurs émissions de CO2
 const data = [
-    { name: 'Ketchup', image: 'chemin/vers/image/ketchup.jpg', co2: 0.94 },
-    { name: 'Mayonnaise', image: 'chemin/vers/image/mayonnaise.jpg', co2: 2.53 },
-    { name: 'Moutarde', image: 'chemin/vers/image/moutarde.jpg', co2: 1.82 },
-    { name: 'Safran', image: 'chemin/vers/image/safran.jpg', co2: 8.15 },
-    { name: 'Vanille', image: 'chemin/vers/image/vanille.jpg', co2: 1.15 },
-    { name: 'Bière', image: 'chemin/vers/image/biere.jpg', co2: 1.12 },
-    { name: 'Vin rouge', image: 'chemin/vers/image/vin_rouge.jpg', co2: 1.19 },
-    { name: 'Champagne', image: 'chemin/vers/image/champagne.jpg', co2: 1.23 },
-    { name: 'Cola', image: 'chemin/vers/image/cola.jpg', co2: 0.51 },
-    { name: 'Eau Cristalline', image: 'chemin/vers/image/eau_cristalline.jpg', co2: 0.27 },
-    { name: 'Pastis', image: 'chemin/vers/image/pastis.jpg', co2: 1.03 },
-    { name: 'Pizza au saumon', image: 'chemin/vers/image/pizza_saumon.jpg', co2: 2.45 },
-    { name: 'Tartiflette', image: 'chemin/vers/image/tartiflette.jpg', co2: 2.53 },
-    { name: 'Brochettes Yakitori', image: 'chemin/vers/image/brochettes_yakitori.jpg', co2: 6.71 },
-    { name: 'Poivre noir', image: 'chemin/vers/image/poivre_noir.jpg', co2: 8.15 },
-    { name: 'Beurre', image: 'chemin/vers/image/beurre.jpg', co2: 7.79 },
-    { name: 'Café', image: 'chemin/vers/image/cafe.jpg', co2: 2.28 },
-    { name: 'Laitue', image: 'chemin/vers/image/laitue.jpg', co2: 0.90 },
-    { name: 'Tomate', image: 'chemin/vers/image/tomate.jpg', co2: 1.96 },
-    { name: 'Beaufort', image: 'chemin/vers/image/beaufort.jpg', co2: 6.09 },
-    { name: 'Cheddar', image: 'chemin/vers/image/cheddar.jpg', co2: 6.18 },
-    { name: 'Gruyère', image: 'chemin/vers/image/gruyere.jpg', co2: 6.19 },
-    { name: 'Huile de tournesol', image: 'chemin/vers/image/huile_tournesol.jpg', co2: 2.57 },
-    { name: 'Brownie au chocolat', image: 'chemin/vers/image/brownie_chocolat.jpg', co2: 7.20 },
-    { name: 'Quinoa', image: 'chemin/vers/image/quinoa.jpg', co2: 7.68 },
-    { name: 'Sucre blanc', image: 'chemin/vers/image/sucre_blanc.jpg', co2: 0.61 },
-    { name: 'Miel', image: 'chemin/vers/image/miel.jpg', co2: 1.20 },
-    { name: 'Langoustine', image: 'chemin/vers/image/langoustine.jpg', co2: 24.17 },
-    { name: 'Oeuf', image: 'chemin/vers/image/oeuf.jpg', co2: 3.17 },
-    { name: 'Rillettes pur porc', image: 'chemin/vers/image/rillettes_pur_porc.jpg', co2: 5.19 },
-    { name: 'Brochette d\'agneau', image: 'chemin/vers/image/brochette_agneau.jpg', co2: 50.77 },
-    { name: 'Steak haché', image: 'chemin/vers/image/steak_hache.jpg', co2: 42.13 },
-    { name: 'Homard', image: 'chemin/vers/image/homard.jpg', co2: 38.33 },
-    { name: 'Moussaka', image: 'chemin/vers/image/moussaka.jpg', co2: 22.66 },
-    { name: 'Chocolat', image: 'chemin/vers/image/chocolat.jpg', co2: 16.88 },
-    { name: 'Lait en poudre', image: 'chemin/vers/image/lait_poudre.jpg', co2: 14.82 },
+    { name: 'Ketchup', co2: 0.94 },
+    { name: 'Mayonnaise', co2: 2.53 },
+    { name: 'Moutarde', co2: 1.82 },
+    { name: 'Safran',  co2: 8.15 },
+    { name: 'Vanille',  co2: 1.15 },
+    { name: 'Bière',  co2: 1.12 },
+    { name: 'Vin rouge', co2: 1.19 },
+    { name: 'Champagne', co2: 1.23 },
+    { name: 'Cola', co2: 0.51 },
+    { name: 'Eau Cristalline', co2: 0.27 },
+    { name: 'Pastis', co2: 1.03 },
+    { name: 'Pizza au saumon',  co2: 2.45 },
+    { name: 'Tartiflette',  co2: 2.53 },
+    { name: 'Brochettes Yakitori',  co2: 6.71 },
+    { name: 'Poivre noir',  co2: 8.15 },
+    { name: 'Beurre',  co2: 7.79 },
+    { name: 'Café', co2: 2.28 },
+    { name: 'Laitue', co2: 0.90 },
+    { name: 'Tomate', co2: 1.96 },
+    { name: 'Beaufort', co2: 6.09 },
+    { name: 'Cheddar', co2: 6.18 },
+    { name: 'Gruyère', co2: 6.19 },
+    { name: 'Huile de tournesol', co2: 2.57 },
+    { name: 'Brownie au chocolat', co2: 7.20 },
+    { name: 'Quinoa', co2: 7.68 },
+    { name: 'Sucre blanc',  co2: 0.61 },
+    { name: 'Miel',  co2: 1.20 },
+    { name: 'Langoustine',  co2: 24.17 },
+    { name: 'Oeuf',  co2: 3.17 },
+    { name: 'Rillettes pur porc',  co2: 5.19 },
+    { name: 'Brochette d\'agneau', co2: 50.77 },
+    { name: 'Steak haché',co2: 42.13 },
+    { name: 'Homard',  co2: 38.33 },
+    { name: 'Moussaka',  co2: 22.66 },
+    { name: 'Chocolat', co2: 16.88 },
+    { name: 'Lait en poudre', co2: 14.82 },
   ];
   
   // Fonction pour mélanger les données de manière aléatoire
@@ -66,12 +66,10 @@ const data = [
   function updateBoxes() {
     document.getElementById('leftBox').innerHTML = `
       <h2>${data[currentAlimentIndex1].name}</h2>
-      <img src="${data[currentAlimentIndex1].image}" alt="${data[currentAlimentIndex1].name}" id="leftImage">
       <p>Emissions de CO2: <span id="leftCO2">${data[currentAlimentIndex1].co2}</span> kg</p>
     `;
     document.getElementById('rightBox').innerHTML = `
       <h2>${data[currentAlimentIndex2].name}</h2>
-      <img src="${data[currentAlimentIndex2].image}" alt="${data[currentAlimentIndex2].name}" id="rightImage">
       <p>Emissions de CO2: <span id="rightCO2">?</span> kg</p>
     `;
   }
