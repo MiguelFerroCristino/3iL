@@ -85,7 +85,7 @@ anime({
 anime({
     targets: water, // Target the array of elements with the class 'text'
     innerHTML: [0, 14.3], // Animate from 0 to 10
-    round: 0.1, // Round the numbers to 1 decimal place
+    round: 1, // Round the numbers to 1 decimal place
     easing: 'linear', // Use linear easing
     duration: 1000, // Animation duration in milliseconds
     delay: anime.stagger(300), // Add a stagger delay to each element
@@ -94,7 +94,7 @@ anime({
 anime({
     targets: recycled, // Target the array of elements with the class 'text'
     innerHTML: [0, 41.4], // Animate from 0 to 10
-    round: .1, // Round the numbers to 1 decimal place
+    round: 1, // Round the numbers to 1 decimal place
     easing: 'linear', // Use linear easing
     duration: 1000, // Animation duration in milliseconds
     delay: anime.stagger(300), // Add a stagger delay to each element
