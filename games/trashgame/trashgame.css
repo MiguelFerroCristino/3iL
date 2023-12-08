@@ -31,7 +31,7 @@
 .dangerous {
   width: 60px;
   height: 60px;
-  background-image: url('../../public/img/garot.svg');
+  background-image: url('../../ressources/img/garot.svg');
   background-size: cover;
   position: absolute;
 }

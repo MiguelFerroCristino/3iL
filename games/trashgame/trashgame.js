@@ -2,31 +2,31 @@ const gameContainer = document.getElementById('game-container');
 const character = document.getElementById('character');
 const svgImages = [
     {
-      url: '../../public/img/bottle-water.svg',
+      url: '../../ressources/img/bottle-water.svg',
       alt: 'Bottle of Water'
     },
     {
-      url: '../../public/img/box.svg',
+      url: '../../ressources/img/box.svg',
       alt: 'Box'
     },
     {
-      url: '../../public/img/glass-drink.svg',
+      url: '../../ressources/img/glass-drink.svg',
       alt: 'Glass of Drink'
     },
     {
-      url: '../../public/img/soap.svg',
+      url: '../../ressources/img/soap.svg',
       alt: 'Soap'
     },
     {
-      url: '../../public/img/wine.svg',
+      url: '../../ressources/img/wine.svg',
       alt: 'Wine'
     },
     {
-      url: '../../public/img/yaourt.svg',
+      url: '../../ressources/img/yaourt.svg',
       alt: 'Yogurt'
     },
     {
-      url: '../../public/img/garot.svg',
+      url: '../../ressources/img/garot.svg',
       alt: 'Garot'
     },
     // Ajoutez autant d'URLs SVG que nécessaire

@@ -48,12 +48,12 @@ function setTheme(theme) {
     document.body.classList.add(theme);
 
     if (theme == 'dark-mode' && window.innerWidth <= 992) {
-        document.getElementById('carte').src = '../public/img/cartemobilenuit.png';
+        document.getElementById('carte').src = '../ressources/img/cartemobilenuit.png';
         document.getElementById('mobilenuit').style.display = 'block'; // Pour afficher l'élément
         document.getElementById('mobilejour').style.display = 'none'; // Pour masquer l'élément
     
     } else {
-        document.getElementById('carte').src = '../public/img/cartemobile.png';
+        document.getElementById('carte').src = '../ressources/img/cartemobile.png';
         document.getElementById('mobilenuit').style.display = 'none'; // Pour masquer l'élément
         document.getElementById('mobilejour').style.display = 'block'; // Pour afficher l'élément
     
@@ -61,11 +61,11 @@ function setTheme(theme) {
     if (theme == 'dark-mode' && window.innerWidth >= 992) {
         document.getElementById('pcnuit').style.display = 'block'; // Pour afficher l'élément
         document.getElementById('pcjour').style.display = 'none'; // Pour masquer l'élément
-        document.getElementById('carte2').src = '../public/img/cartepcnuit.jpg';
+        document.getElementById('carte2').src = '../ressources/img/cartepcnuit.jpg';
     } else {
         document.getElementById('pcnuit').style.display = 'none'; // Pour masquer l'élément
         document.getElementById('pcjour').style.display = 'block'; // Pour afficher l'élément
-        document.getElementById('carte2').src = '../public/img/cartepc.jpg';
+        document.getElementById('carte2').src = '../ressources/img/cartepc.jpg';
     }
 }
 
@@ -115,12 +115,12 @@ anime({
 
 
 if (theme == 'dark-mode' && window.innerWidth <= 992) {
-    document.getElementById('carte').src = '../public/img/cartemobilenuit.png';
+    document.getElementById('carte').src = '../ressources/img/cartemobilenuit.png';
     document.getElementById('mobilenuit').style.display = 'block'; // Pour afficher l'élément
     document.getElementById('mobilejour').style.display = 'none'; // Pour masquer l'élément
 
 } else {
-    document.getElementById('carte').src = '../public/img/cartemobile.png';
+    document.getElementById('carte').src = '../ressources/img/cartemobile.png';
     document.getElementById('mobilenuit').style.display = 'none'; // Pour masquer l'élément
     document.getElementById('mobilejour').style.display = 'block'; // Pour afficher l'élément
 
@@ -128,11 +128,11 @@ if (theme == 'dark-mode' && window.innerWidth <= 992) {
 if (theme == 'dark-mode' && window.innerWidth >= 992) {
     document.getElementById('pcnuit').style.display = 'block'; // Pour afficher l'élément
     document.getElementById('pcjour').style.display = 'none'; // Pour masquer l'élément
-    document.getElementById('carte2').src = '../public/img/cartepcnuit.jpg';
+    document.getElementById('carte2').src = '../ressources/img/cartepcnuit.jpg';
 } else {
     document.getElementById('pcnuit').style.display = 'none'; // Pour masquer l'élément
     document.getElementById('pcjour').style.display = 'block'; // Pour afficher l'élément
-    document.getElementById('carte2').src = '../public/img/cartepc.jpg';
+    document.getElementById('carte2').src = '../ressources/img/cartepc.jpg';
 }
 
 
