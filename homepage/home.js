@@ -43,7 +43,36 @@ function setTheme(theme) {
   
     // Ajouter la classe du thème sélectionné au body
     document.body.classList.add(theme);
+
+    if (theme == 'dark-mode' && window.innerWidth <= 992) {
+        document.getElementById('carte').src = '../3iL/public/img/cartemobilenuit.png';
+        document.getElementById('mobilenuit').style.display = 'block'; // Pour afficher l'élément
+        document.getElementById('mobilejour').style.display = 'none'; // Pour masquer l'élément
+
+    } else {
+        document.getElementById('carte').src = '../3iL/public/img/cartemobile.png';
+        document.getElementById('mobilenuit').style.display = 'none'; // Pour masquer l'élément
+        document.getElementById('mobilejour').style.display = 'block'; // Pour afficher l'élément
+
+    }
+    if (theme == 'dark-mode' && window.innerWidth >= 992) {
+        document.getElementById('pcnuit').style.display = 'block'; // Pour afficher l'élément
+        document.getElementById('pcjour').style.display = 'none'; // Pour masquer l'élément
+        document.getElementById('carte2').src = '../3iL/public/img/cartepcnuit.jpg';
+    } else {
+        document.getElementById('pcnuit').style.display = 'none'; // Pour masquer l'élément
+        document.getElementById('pcjour').style.display = 'block'; // Pour afficher l'élément
+        document.getElementById('carte2').src = '../3iL/public/img/cartepc.jpg';
+    }
+    
+
 }
+
+function redirectTo(url) {
+    window.open(url, '_blank');
+}
+
+
 const numbers = document.getElementsByClassName('animatedNumbers');
 
 // Convert HTMLCollection to an array

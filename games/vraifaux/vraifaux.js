@@ -51,37 +51,78 @@ var questionsList = [
     },
 ];
 
+var currentQuestionIndex = 0;
+var compteurScore = 0;
+var compteurQuestion = 0;
+
 function setQuestion(questionIndex) {
+
     var questionElement = document.getElementById('question');
     questionElement.textContent = questionsList[questionIndex].question;
 }
 
 function cancelFenetre() {
-    var el = document.getElementById('resultat');
-    el.style.animation = "fadeUpOut 0.5s ease-in-out";
-    setTimeout(function () {
-        el.style.display = "none";
-    }, 500);
+    var rep = document.getElementById('reponses');
+    var retou = document.getElementById('retour');
+    var resultatElement = document.getElementById('resultat');
+    resultatElement.style.display = "none";
+
+    if (compteurQuestion >= 10) {
+        var questionElement = document.getElementById('question');
+        questionElement.textContent = "Quizz terminé ! Votre score : " + compteurScore + "/10";
+        rep.style.display = 'none';
+        retou.style.display = 'block';
+        // Réinitialisez le score et l'index de la question
+        compteurScore = 0;
+        currentQuestionIndex = 0;
+    } else {
+        currentQuestionIndex++;
+        setQuestion(currentQuestionIndex);
+    }
 }
 
-function checkAnswer(userAnswer) {
-    var currentQuestionIndex = 0;
-    var correctAnswer = questionsList[currentQuestionIndex].reponse;
 
+
+function checkAnswer(userAnswer) {
+    var correctAnswer = questionsList[currentQuestionIndex].reponse;
     var comparatifElement = document.getElementById('comparatif');
+    var explElement = document.getElementById('expl');
+    var bouton = document.getElementById('cancel');
     var resultatElement = document.getElementById('resultat');
 
     if (userAnswer === correctAnswer) {
+        compteurScore++;
         comparatifElement.textContent = "Bonne réponse!";
         resultatElement.style.backgroundColor = 'green';
+        bouton.style.backgroundColor = 'green';
+        compteurQuestion++
     } else {
         comparatifElement.textContent = "Mauvaise réponse!";
         resultatElement.style.backgroundColor = 'red';
+        bouton.style.backgroundColor = 'red';
+        compteurQuestion++
     }
 
+    explElement.textContent = questionsList[currentQuestionIndex].explication;
     resultatElement.style.display = 'flex';
 }
 
+function displayFinalScore() {
+    // Cachez les boutons de réponse
+    var reponsesElement = document.getElementById('reponses');
+    reponsesElement.style.display = 'none';
+
+    // Affichez le message de fin et le score
+    var questionElement = document.getElementById('question');
+    questionElement.textContent = "Fin du quizz. Score : " + compteurScore + "/" + questionsList.length;
+
+    // Réinitialisez le score
+    compteurScore = 0;
+
+    // Affichez le résultat
+    var resultatElement = document.getElementById('resultat');
+    resultatElement.style.display = 'flex';
+}
 document.addEventListener('DOMContentLoaded', function () {
     setQuestion(0);
 });

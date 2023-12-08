@@ -12,7 +12,10 @@
 <body>
     <div id="quizz">
         <div id="divquestion">
-            <h1 id="question" style="color: black;"></h1>
+            <h1 id="question" style="color: black; width: 90%; text-align: center;"></h1>
+            <a id="retour" href="./../index.html"
+                style="display: none; text-decoration: none; color: black; margin-top: 10vh;">Retour à
+                l'accueil</a>
         </div>
         <div id="reponses">
             <button style="background-color: green;" value="true" class="btnrep"
@@ -22,7 +25,10 @@
         </div>
     </div>
     <div id="resultat" style="display:none;">
-        <h1 id="comparatif"></h1>
-        <button id="cancel" onclick="cancelFenetre()">Cancel</button>
+        <div id="divresult">
+            <h1 id="comparatif"></h1>
+            <h3 id="expl"></h3>
+            <button id="cancel" onclick="cancelFenetre()">Prochaine question</button>
+        </div>
     </div>
 </body>
