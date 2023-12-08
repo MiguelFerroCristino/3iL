@@ -202,19 +202,23 @@ swiper-slide:nth-child(4n) {
 }
 
 .dropdown-acces{
+  margin-left: -0.5rem;
   position: fixed;
   height: 13rem;
-  width: 6rem;
+  width: 7.2rem;
   transform: translateY(5px);
   background-color: var(--clr-bgcolor);
   border-radius: 1.8rem ;
   display: none;
+  text-align: center;
+  
+  border: 4px solid var(--clr-fontcolor);
   
 }
 
 .accesibility-2{
   margin-top: 1rem;
-  width: 6rem;
+  width: auto;
   height: 2rem;
   background-color: var(--clr-bgcolor);
   border-radius: 4rem;
@@ -222,6 +226,7 @@ swiper-slide:nth-child(4n) {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.9rem;
   color: var(--clr-fontcolor);
 
 }
