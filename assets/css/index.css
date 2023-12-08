@@ -163,7 +163,7 @@ body {
 .third-screen {
   background-color: var(--clr-bgcolor);
   height: 47rem;
-  width: 100vw;
+  width: 96vw;
   margin-top: 7rem;
   display: flex;
   flex-direction: column;
@@ -234,4 +234,32 @@ swiper-slide:nth-child(4n) {
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
+}
+
+.dropdown-acces{
+  position: fixed;
+  height: 10rem;
+  width: 6rem;
+  transform: translateY(5px);
+  background-color: var(--clr-bgcolor);
+  border-radius: 1.8rem ;
+  display: none;
+  
+}
+@keyframes dropdownAnimation {
+  from {
+      height: 0;
+  }
+  to {
+      height: 10rem; 
+  }
+}
+
+@keyframes reversedropdownAnimation {
+  from {
+      height: 10rem;
+  }
+  to {
+      height: 0 ; 
+  }
 }
