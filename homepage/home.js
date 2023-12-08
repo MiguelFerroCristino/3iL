@@ -47,10 +47,12 @@ function setTheme(theme) {
     // Ajouter la classe du thème sélectionné au body
     document.body.classList.add(theme);
 }
-const numbers = document.getElementsByClassName('animatedNumbers');
+const trees = document.getElementsByClassName('trees');
+const water = document.getElementsByClassName('water');
+const recycled = document.getElementsByClassName('recycled');
+const collected = document.getElementsByClassName('collected');
 
 // Convert HTMLCollection to an array
-const numbersArray = Array.from(numbers);
 
 // Animate the numbers using Anime.js
 anime({
