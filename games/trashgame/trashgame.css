@@ -1,3 +1,6 @@
+@import url("../../global.css");
+
+
 #game-container {
   width: 400px;
   height: 400px;
@@ -31,4 +34,10 @@
   background-image: url('../../public/img/garot.svg');
   background-size: cover;
   position: absolute;
+}
+.divBtn{
+  display: block;
+  position: fixed;
+  top: 2rem;
+  left: 5rem;
 }

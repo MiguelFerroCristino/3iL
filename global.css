@@ -64,3 +64,17 @@ a {
   --fnt-font-contenu: "Dyslexie", sans-serif;
   --fnt-font-title: "Dyslexie", sans-serif;
 }
+
+.boutonRetour{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 20%;
+  border-radius: 10px;
+  background-color: var(--clr-bgcolor);
+  font-family: var(--fnt-font-contenu);
+  display: flex;
+  justify-content: center;
+  font-size: 110%;
+}

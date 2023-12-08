@@ -1,3 +1,5 @@
+@import url("../global.css");
+
 .container {
     width: 100%;
     display: flex;

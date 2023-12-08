@@ -139,5 +139,5 @@ if (theme == 'dark-mode' && window.innerWidth >= 992) {
 
 
 function redirectTo(url) {
-window.open(url, '_blank');
+window.open(url, "_self");
 }
