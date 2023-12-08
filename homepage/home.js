@@ -37,42 +37,16 @@ function openMenu() {
     }
 
 }
+
 function setTheme(theme) {
-    // Supprimer toutes les classes de thème du body
+    const body = document.body;
+    const dyslexiaClass = 'dyslexia';
+  
     document.body.classList.remove('dark-mode', 'protonopia', 'deuteranopia', 'tritanopia');
   
     // Ajouter la classe du thème sélectionné au body
     document.body.classList.add(theme);
-
-    if (theme == 'dark-mode' && window.innerWidth <= 992) {
-        document.getElementById('carte').src = '../3iL/public/img/cartemobilenuit.png';
-        document.getElementById('mobilenuit').style.display = 'block'; // Pour afficher l'élément
-        document.getElementById('mobilejour').style.display = 'none'; // Pour masquer l'élément
-
-    } else {
-        document.getElementById('carte').src = '../3iL/public/img/cartemobile.png';
-        document.getElementById('mobilenuit').style.display = 'none'; // Pour masquer l'élément
-        document.getElementById('mobilejour').style.display = 'block'; // Pour afficher l'élément
-
-    }
-    if (theme == 'dark-mode' && window.innerWidth >= 992) {
-        document.getElementById('pcnuit').style.display = 'block'; // Pour afficher l'élément
-        document.getElementById('pcjour').style.display = 'none'; // Pour masquer l'élément
-        document.getElementById('carte2').src = '../3iL/public/img/cartepcnuit.jpg';
-    } else {
-        document.getElementById('pcnuit').style.display = 'none'; // Pour masquer l'élément
-        document.getElementById('pcjour').style.display = 'block'; // Pour afficher l'élément
-        document.getElementById('carte2').src = '../3iL/public/img/cartepc.jpg';
-    }
-    
-
 }
-
-function redirectTo(url) {
-    window.open(url, '_blank');
-}
-
-
 const numbers = document.getElementsByClassName('animatedNumbers');
 
 // Convert HTMLCollection to an array
@@ -80,8 +54,35 @@ const numbersArray = Array.from(numbers);
 
 // Animate the numbers using Anime.js
 anime({
-    targets: numbersArray, // Target the array of elements with the class 'text'
+    targets: trees, // Target the array of elements with the class 'text'
     innerHTML: [0, 10], // Animate from 0 to 10
+    round: 1, // Round the numbers to 1 decimal place
+    easing: 'linear', // Use linear easing
+    duration: 1000, // Animation duration in milliseconds
+    delay: anime.stagger(300), // Add a stagger delay to each element
+});
+// Animate the numbers using Anime.js
+anime({
+    targets: water, // Target the array of elements with the class 'text'
+    innerHTML: [0, 14.3], // Animate from 0 to 10
+    round: 1, // Round the numbers to 1 decimal place
+    easing: 'linear', // Use linear easing
+    duration: 1000, // Animation duration in milliseconds
+    delay: anime.stagger(300), // Add a stagger delay to each element
+});
+// Animate the numbers using Anime.js
+anime({
+    targets: recycled, // Target the array of elements with the class 'text'
+    innerHTML: [0, 41.4], // Animate from 0 to 10
+    round: 1, // Round the numbers to 1 decimal place
+    easing: 'linear', // Use linear easing
+    duration: 1000, // Animation duration in milliseconds
+    delay: anime.stagger(300), // Add a stagger delay to each element
+});
+// Animate the numbers using Anime.js
+anime({
+    targets: collected, // Target the array of elements with the class 'text'
+    innerHTML: [0, 145], // Animate from 0 to 10
     round: 1, // Round the numbers to 1 decimal place
     easing: 'linear', // Use linear easing
     duration: 1000, // Animation duration in milliseconds

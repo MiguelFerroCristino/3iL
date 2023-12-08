@@ -1,93 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./homepage/index.css">
-    <!-- <script src="/js/index.js"></script> -->
+    <link rel="icon" type="image/x-icon" href="./public/img/planet-logo.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>EcoQuest</title>
 </head>
 
 <body>
-        <nav class="navbar ">
+    <nav class="navbar ">
 
-            <div class="title">
-                <img class='logo' src="./public/img/logo.svg" alt="">
-                <img src="./public/img/logotittle.svg" alt="">
-            </div>
-            <div class="redirection-2">
-                <p >Game</p>
-                <p >Stats</p>
-                <p >Chatbot</p>
-            </div>
-            <div>
-                <div class="Settings" onclick="openMenu2()">
-                    <div  class="accesibility">
-                        <i class="fa-solid fa-gear"></i>
-                        <p>Settings</p>
-                    </div>
+        <div class="title">
+            <img class='logo' src="./public/img/logo.svg" alt="leaf-icon">
+            <img class="logo-text"src="./public/img/logotittle.svg" alt="EcoQuest-text">
+        </div>
+        <div class="redirection-2">
+            <a href="#game"><p>Game</p></a>
+            <a href="#stats"><p>Stats</p></a>
+            <a href="#donate"><p>Donate</p></a>
+        </div>
+        <div>
+            <div class="Settings" onclick="openMenu2()">
+                <div class="accesibility">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Settings</p>
                 </div>
-                <div class="Settings-mobile" onclick="openMenu()">
-                    <div  class="accesibility">
-                        <i class="fa-solid fa-gear"></i>    
-                          <p>Settings</p>
-                    </div>
+            </div>
+            <div class="Settings-mobile" onclick="openMenu()">
+                <div class="accesibility">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Settings</p>
                 </div>
+            </div>
 
-                <div id='menu' class="dropdown-acces">
+            <div id='menu' class="dropdown-acces">
 
-                    <div onclick="setTheme('light')"
-                        class="accesibility-2">
-                        <i class="color-icon fa-solid fa-sun"></i>
-                        <p>Light</p>
-                   </div>
-                    <div onclick="setTheme('dark-mode')" class="accesibility-2">
-                        <i class="fa-solid fa-moon"></i>  <p>Dark</p>
-                    </div>
-                    <div onclick="setTheme('protonopia')" class="accesibility-2">
-                         <p>Protonopia</p>
-                    </div>
-                    <div onclick="setTheme('deuteranopia')" class="accesibility-2">
-                         <p>Deuteranopia</p>
-                    </div>
-                    <div onclick="setTheme('tritanopia')" class="accesibility-2">
-                          <p>Tritanopia</p>
-                    </div>
-                    <div onclick="setTheme('dyslexia')" class="accesibility-2">
-                        <p>Dyslexie</p>
-                  </div>
-                  <div onclick="openMenu()" class="crossclose accesibility-2">
+                <div onclick="setTheme('light')" class="accesibility-2">
+                    <i class="color-icon fa-solid fa-sun"></i>
+                    <p>Light</p>
+                </div>
+                <div onclick="setTheme('dark-mode')" class="accesibility-2">
+                    <i class="fa-solid fa-moon"></i>
+                    <p>Dark</p>
+                </div>
+                <div onclick="setTheme('protonopia')" class="accesibility-2">
+                    <p>Protonopia</p>
+                </div>
+                <div onclick="setTheme('deuteranopia')" class="accesibility-2">
+                    <p>Deuteranopia</p>
+                </div>
+                <div onclick="setTheme('tritanopia')" class="accesibility-2">
+                    <p>Tritanopia</p>
+                </div>
+                <div onclick="setTheme('dyslexia')" class="accesibility-2">
+                    <p>Dyslexie</p>
+                </div>
+                <div onclick="openMenu()" class="crossclose accesibility-2">
                     <i class="fa-solid fa-xmark"></i>
                 </div>
 
+            </div>
+            <div id='menu' class="dropdown-acces2">
+
+                <div onclick="setTheme('light')" class="accesibility-2">
+                    <i class="color-icon fa-solid fa-sun"></i>
+                    <p>Light</p>
                 </div>
-                <div id='menu' class="dropdown-acces2">
+                <div onclick="setTheme('dark-mode')" class="accesibility-2">
+                    <i class="fa-solid fa-moon"></i>
+                    <p>Dark</p>
+                </div>
+                <div onclick="setTheme('protonopia')" class="accesibility-2">
+                    <p>Protonopia</p>
+                </div>
+                <div onclick="setTheme('deuteranopia')" class="accesibility-2">
+                    <p>Deuteranopia</p>
+                </div>
+                <div onclick="setTheme('tritanopia')" class="accesibility-2">
+                    <p>Tritanopia</p>
+                </div>
+                <div onclick="setTheme('dyslexia')" class="accesibility-2">
+                    <p>Dyslexie</p>
+                </div>
 
-                    <div onclick="setTheme('light')"
-                        class="accesibility-2">
-                        <i class="color-icon fa-solid fa-sun"></i>
-                        <p>Light</p>
-                   </div>
-                    <div onclick="setTheme('dark-mode')" class="accesibility-2">
-                        <i class="fa-solid fa-moon"></i>  <p>Dark</p>
-                    </div>
-                    <div onclick="setTheme('protonopia')" class="accesibility-2">
-                         <p>Protonopia</p>
-                    </div>
-                    <div onclick="setTheme('deuteranopia')" class="accesibility-2">
-                         <p>Deuteranopia</p>
-                    </div>
-                    <div onclick="setTheme('tritanopia')" class="accesibility-2">
-                          <p>Tritanopia</p>
-                    </div>
-                    <div onclick="setTheme('dyslexia')" class="accesibility-2">
-                        <p>Dyslexie</p>
-                  </div>
-
-                    <div onclick="openMenu2()" class="crossclose accesibility-2">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
+                <div onclick="openMenu2()" class="crossclose accesibility-2">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
 
                 </div>
             </div>
@@ -102,44 +103,8 @@
                 <p >Chatbot</p>
             </div>
             
-            <div class="carte">
-                <div class="img-container">
-                    <img id='carte' class="img-mobile" src="../3iL/public/img/cartemobile.png" alt="">
-                    <div id="mobilejour">
-                        <i onclick="(redirectTo('games/vraifaux/vraifaux.html'))" class="fa-solid fa-location-dot ping-icon7"></i>
-                        <i onclick="(redirectTo('games/higherlower/higherlower.html'))" class="fa-solid fa-location-dot ping-icon8"></i>
-                        <i onclick="(redirectTo('games/trashgame/trashgame.html'))" class="fa-solid fa-location-dot ping-icon9"></i>
-    
-                    </div>
-                    <div id="mobilenuit">
-                        <i onclick="(redirectTo('games/trashgame/trashgame.html'))" class="fa-solid fa-location-dot ping-icon10"></i>
-                        <i onclick="(redirectTo('games/higherlower/higherlower.html'))" class="fa-solid fa-location-dot ping-icon11"></i>
-                        <i onclick="(redirectTo('games/vraifaux/vraifaux.html'))" class="fa-solid fa-location-dot ping-icon12"></i>
-    
-                    </div>
-                   
+                <div class="carte">
                 </div>
-            </div>
-            <div class="carte2">
-                <div class="img-container">
-                    <img id='carte2' class="img-mobile" src="../3iL/public/img/cartepc.jpg" alt="">
-                    <div id="pcjour">
-                        <i onclick="(redirectTo('games/vraifaux/vraifaux.html'))" class="fa-solid fa-location-dot ping-icon"></i>
-                        <i onclick="(redirectTo('games/higherlower/higherlower.html'))" class="fa-solid fa-location-dot ping-icon2"></i>
-                        <i onclick="(redirectTo('games/trashgame/trashgame.html'))"  class="fa-solid fa-location-dot ping-icon3"></i>
-                    </div>
-                    <div id="pcnuit">
-                        <i onclick="(redirectTo('games/vraifaux/vraifaux.html'))" class="fa-solid fa-location-dot ping-icon4"></i>
-                        <i onclick="(redirectTo('games/higherlower/higherlower.html'))" class="fa-solid fa-location-dot ping-icon5"></i>
-                        <i onclick="(redirectTo('games/trashgame/trashgame.html'))"  class="fa-solid fa-location-dot ping-icon6"></i>
-                    </div>
-                    
-
-
-                </div>
-            </div>
-            
-                
         </div>
         <div class="second-screen">
             <h1 class="text-title">Key Numbers of 2023</h1>
@@ -152,29 +117,29 @@
                 <p class="text-2">billions of trees planted.</p>
             </div>
 
-            <div class="stat-parent">
-                <div class="stat">
-                    <p class="text">72</p>
-                    <img src="./public/img/water.svg" alt="">
-                </div>
-                <p class="text-2">billions m3 of water saved.</p>
+        <div class="stat-parent">
+            <div class="stat">
+                <p class="text water">0</p>
+                <img src="./public/img/water.svg" alt="water-icon">
             </div>
-            <div class="stat-parent">
-                <div class="stat">
-                    <p class="text">72</p>
-                    <img src="./public/img/recycle.svg" alt="">
-                </div>
-                <p class="text-2">Kg of plastic recycled</p>
-            </div>
-            <div class="stat-parent">
-                <div class="stat">
-                    <p class="text">72</p>
-                    <img src="./public/img/euro.svg" alt="">
-                </div>
-                <p class="text-2">ollected</p>
-            </div>
+            <p class="text-2">billions m3 of water saved.</p>
         </div>
-        <div class="third-screen">
+        <div class="stat-parent">
+            <div class="stat">
+                <p class="text recycled">0</p>
+                <img src="./public/img/recycle.svg" alt="recycling-icon">
+            </div>
+            <p class="text-2">billions tons of plastic recycled</p>
+        </div>
+        <div class="stat-parent">
+            <div class="stat">
+                <p class="text collected">0</p>
+                <img src="./public/img/euro.svg" alt="euros-icon">
+            </div>
+            <p class="text-2">billions collected for our planet</p>
+        </div>
+    </div>
+        <div class="third-screen" id="donate">
             <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
                 <swiper-slide>
                     <div class='card'>
@@ -207,16 +172,28 @@
               </swiper-container>
               <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-        </div>
-        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-        <script src="https://mediafiles.botpress.cloud/a634fa7f-c0eb-406e-b6be-56e9a66297e8/webchat/config.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-        <script id="datagir_dechets" src="https://quefairedemesdechets.fr/iframe.js" data-search="?theme=default"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-        <script src="./homepage/home.js"></script>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h1 class="logo-text"><span>Eco</span>Quest</h1>
+                    <p>
+                        EcoQuest est un jeu qui a pour but de sensibiliser les jeunes à l'écologie et à l'environnement.
+                    </p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> &nbsp; 06 06 06 06 06</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp;
+    </footer>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/a634fa7f-c0eb-406e-b6be-56e9a66297e8/webchat/config.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script id="datagir_dechets" src="https://quefairedemesdechets.fr/iframe.js" data-search="?theme=default"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="./homepage/home.js"></script>
 
 
-        <!-- <button onclick="setTheme('default')">Light Mode</button>
+    <!-- <button onclick="setTheme('default')">Light Mode</button>
 <button onclick="setTheme('dark-mode')">Dark Mode</button>
 <button onclick="setTheme('protonopia')">Protonopia Mode</button>
 <button onclick="setTheme('deuteranopia')">Deuteranopia Mode</button>
@@ -225,4 +202,5 @@
 
 
 </body>
+
 </html>
