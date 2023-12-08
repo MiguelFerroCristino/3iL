@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
 @import url("global.css");
 body {
-  font-family: "Archivo Black", sans-serif;
   margin: 0;
   background-color: var(--clr-bgcolor);
   overflow-x: hidden;
 }
 .navbar {
+  font-family: var(--fnt-font);
+
   position: fixed;
   top: 0;
   background-color: var(--clr-primary);
