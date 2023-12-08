@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: center; /* Centrer les cartes horizontalement */
 }
-.newbutton{
+.boutonRetour{
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
