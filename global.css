@@ -18,10 +18,12 @@ a {
   text-decoration: none;
   color: var(--clr-fontcolor);
 }
+
 .default {
   --fnt-font-title: "Archivo Black", sans-serif;
   --fnt-font-contenu: "Archivo Black", sans-serif;
 }
+
 .protonopia {
   --clr-primary: #7a6e3d; /* Equivalent au clr-light-primary pour la protanopie */
   --clr-bgcolor: #fbebbd; /* Equivalent au clr-light-secondary pour la protanopie */
