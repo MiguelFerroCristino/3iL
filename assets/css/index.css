@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Archivo Black", sans-serif;
   margin: 0;
   background-color: #ccf8c4;
   overflow-x: hidden;
@@ -62,6 +64,7 @@ body {
   text-decoration: none;
   text-align: center;
   gap: 2rem;
+  font-size: 1.5rem;
 }
 
 .carte {
@@ -81,6 +84,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
 }
 .stat-parent {
   display: flex;
@@ -89,6 +93,7 @@ body {
   align-items: center;
   color: #17254b;
   font-style: bold;
+  text-align: center;
 }
 
 .stat {
@@ -99,7 +104,7 @@ body {
   gap: 1rem;
   height: 5rem;
   justify-items: center;
-    align-items: center;
+  align-items: center;
 }
 .text {
   color: #17254b;
@@ -109,12 +114,109 @@ body {
   color: #ccf8c4;
   font-size: 2rem;
   margin-top: -0.5rem;
-
+  font-family: "Arial", sans-serif;
 }
 .text-title {
   color: #ccf8c4;
   font-size: 2.5rem;
 }
 .svg-stat {
-    
+}
+
+.third-screen {
+  background-color: #ccf8c4;
+  height: 47rem;
+  width: 100vw;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+swiper-container {
+  width: 240px;
+  height: 320px;
+}
+
+swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+swiper-slide:nth-child(1n) {
+  background-color: rgb(255, 255, 255);
+}
+
+swiper-slide:nth-child(2n) {
+    background-color: rgb(255, 255, 255);
+}
+
+swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
+
+.cardbtn {
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 1rem;
+  background-color: #17254b;
+  color: #fff;
+  text-decoration: none;
+  font-size: medium;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.logo-assoc {
+  width: 10rem;
+
+}
+.text-assoc {
+
+  color: #17254b;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
 }
