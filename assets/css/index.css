@@ -128,7 +128,7 @@ body {
 .third-screen {
   background-color: var(--clr-bgcolor);
   height: 47rem;
-  width: 100vw;
+  width: 96vw;
   margin-top: 7rem;
   display: flex;
   flex-direction: column;
@@ -200,3 +200,30 @@ swiper-slide:nth-child(4n) {
   font-weight: bold;
   text-align: center;
 }
+
+.dropdown-acces{
+  position: fixed;
+  height: 13rem;
+  width: 6rem;
+  transform: translateY(5px);
+  background-color: var(--clr-bgcolor);
+  border-radius: 1.8rem ;
+  display: none;
+  
+}
+
+.accesibility-2{
+  margin-top: 1rem;
+  width: 6rem;
+  height: 2rem;
+  background-color: var(--clr-bgcolor);
+  border-radius: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--clr-fontcolor);
+
+}
+
+

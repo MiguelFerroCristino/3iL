@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <script src="../assets/js/changementTheme.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="../assets/js/home.js"></script>
 
     <title>EcoQuest</title>
 </head>
@@ -19,11 +20,32 @@
                 <img class='logo' src="../assets/img/logo.svg" alt="">
                 <img src="../assets/img/logotittle.svg" alt="">
             </div>
+            <div>
+                <div  onclick="openMenu()">
+                    <div  onclick="setTheme('light')"class="accesibility">
+                        <i class="color-icon fa-solid fa-sun"></i>
+                        <p>Light</p>
+                    </div>
+                </div>
+                <div id='menu' class="dropdown-acces">
+                    <div onclick="setTheme('dark-mode')" class="accesibility-2">
+                        <i class="fa-solid fa-moon"></i>  <p>Dark</p>
+                    </div>
+                    <div onclick="setTheme('protonopia')" class="accesibility-2">
+                         <p>Protonopia</p>
+                    </div>
+                    <div onclick="setTheme('deuteranopia')" class="accesibility-2">
+                         <p>Deuteranopia</p>
+                    </div>
+                    <div onclick="setTheme('tritanopia')" class="accesibility-2">
+                          <p>Tritanopia</p>
+                    </div>
 
-            <div class="accesibility">
-                <i class="color-icon fa-solid fa-sun"></i>
-                <p>Light</p>
+                </div>
             </div>
+            
+            
+            
         </nav>
         <div class="first-screen">
             <div class="redirection">
@@ -112,4 +134,3 @@
 
 </body>
 </html>
- 
